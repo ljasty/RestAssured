@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.ReqRes.Util.ListenerClass"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="/Users/lakshmiguntupalli/IdeaProjects/RestAssured/src/test/java/org/ReqRes">
+       <classes>
+            <class name="org.ReqRes.Test.PutMethod">
+                <methods>
+                    <include name="put"/>
+                    <include name="putJson"/>
+                </methods>
+            </class>
+            <class name="org.ReqRes.Test.GetTest"/>
+            <class name="org.ReqRes.Test.PostTest"/>
+           <class name="org.ReqRes.Test.Datadrivenpost"/>
+        </classes>
+    </test>
+</suite>
