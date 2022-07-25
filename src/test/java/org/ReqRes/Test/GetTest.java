@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class GetTest extends BaseClass {
 
     @Test
-    public void getmethod() {
+    public void get3() {
 /*  this is only for java
         Response res= RestAssured.get("https://reqres.in/api/users/2");
         System.out.println(res.asPrettyString());
@@ -19,8 +19,8 @@ public class GetTest extends BaseClass {
                 .get("https://reqres.in/api/users/2")
                 .then()
 
-                // .assertThat().statusCode(200).log().all();
-                .assertThat().log().body().toString();
+                 .assertThat().statusCode(200).log().all();
+              //  .assertThat().log().body().toString();
 
 
     }
@@ -33,7 +33,7 @@ public class GetTest extends BaseClass {
                 /*  .then()
                   .assertThat().statusCode(200).log().all();
                    .assertThat().log().body().toString(); */
-               // .then().extract().response();
+               .then().extract().response();
         System.out.println(res1.body().asPrettyString());
 
     }
